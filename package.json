@@ -4,7 +4,11 @@
   "description": "Mongodb with node api",
   "main": "index.js",
   "scripts": {
+    "start":"node server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node":"9.11.1"
   },
   "author": "Sohaib Raza",
   "license": "ISC",
@@ -12,6 +16,7 @@
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
     "mongodb": "^3.0.7",
-    "mongoose": "^5.0.17"
+    "mongoose": "^5.0.17",
+    "nodemon": "^1.17.4"
   }
 }

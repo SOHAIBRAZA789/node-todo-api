@@ -8,6 +8,9 @@ var { User } = require('./models/user');
 
 var app = express();
 
+//** procss.env.PORT is for Online server**/
+const port = process.env.PORT || 3000;
+
 app.use(bodyParser.json());
 
 //** SAVE DATA **/
@@ -59,8 +62,8 @@ app.get('/todos/:id', (req, res) => {
 
 
 //** Server **//
-app.listen(3000, () => {
-    console.log('Start on Port 300');
+app.listen(port, () => {
+    console.log(`Start up at port on ${port}`);
 });
 
 
